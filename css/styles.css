@@ -116,7 +116,7 @@
 /* Add a grey background to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #eeeeee;
-  color: #393e46;
+  color: #222831;
 }
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
