@@ -1,47 +1,52 @@
+body {
+  background-color: #eeeeee
+}
 
-    body {
-      background-color: #eeeeee
-    }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 5px;
+  width: 2%;
+}
 
-    hr {
-      border-style: none;
-      border-top-style: dotted;
-      border-color: grey;
-      border-width: 5px;
-      width: 2%;
-    }
-    
-    h1{
-        color: #1e2022
-    }
 
-    h2 {
-        color: #1e2022
-    }
-    
-    h3{
-        color: #52616b
-    }
 
-    h4{
-        color: #52616b
-    }
-    
-    tr{
-        vertical-align: top;
-    }
+h1 {
+  color: black;
+}
 
-    .topnav {
-      background-color: #222831;
-      overflow: hidden;
-    }
-    
-    
-    /* Add a black background color to the top navigation */
+h2 {
+  color: black;
+}
+
+h3 {
+  color: black;
+}
+
+h4 {
+  color: black;
+}
+
+tr {
+  vertical-align: top;
+}
+
+.topnav {
+  background-color: #222831;
+  overflow: hidden;
+}
+
+#heading1 {
+  color: black
+}
+
+
+/* Add a black background color to the top navigation */
 .topnav {
   background-color: #222831;
   overflow: hidden;
@@ -61,7 +66,11 @@
 /* Add an active class to highlight the current page */
 .active {
   background-color: #Ffd369;
-  color: white;
+  color: rgb(248, 215, 215);
+}
+
+.circular {
+  border-radius: 100%;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -93,7 +102,7 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -108,7 +117,8 @@
 }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover,
+.dropdown:hover .dropbtn {
   background-color: #393e46;
   color: white;
 }
@@ -126,9 +136,12 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
+
   .topnav a.icon {
     float: right;
     display: block;
@@ -137,19 +150,30 @@
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
+
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
+
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
@@ -157,6 +181,55 @@
   }
 }
 
+.myButton {
+  box-shadow: 0px 1px 0px 0px #fff6af;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color: #ffec64;
+  border-radius: 6px;
+  border: 1px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+}
 
-    
-    
+.myButton:hover {
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color: #ffab23;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.contact-me {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  padding: 10px;
+}
+
+.bottom-container {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-link {
+  color: black;
+  font-size: 30px;
+  margin: 2em;
+}
+
+.bottom-container {
+  background-color: #393e46;
+  width: 100%;
+  padding: auto;
+}
